@@ -23,6 +23,10 @@ class LargeFileUploadServiceProvider extends ServiceProvider
             );
         }
 
+        if ($views = $extension->views()) {
+            $this->loadViewsFrom($views, 'large-file-field');
+        }
+
         Admin::booting(function (){
             Admin::js('vendor/laravel-admin-ext/large-file-upload/js/aetherupload.admin.js');
             Admin::js('vendor/laravel-admin-ext/large-file-upload/js/bootstrap.file-input.js');

@@ -6,7 +6,7 @@ use Encore\Admin\Form\Field;
 class LargeFileField extends Field
 {
 
-     public $view = __DIR__.'/../resources/views/large_file_upload.blade.php';
+    public $view = 'large-file-field::large_file_upload';
 
     public function render()
     {
@@ -14,7 +14,10 @@ class LargeFileField extends Field
 
         $this->script = <<<SRC
 
-$('#{$name}-file').bootstrapFileInput();
+        $('#{$name}-file').bootstrapFileInput();
+        $('#{$name}-file').change(function(){
+             aetherupload('{$name}', this, 'file').success(getPath).upload('{$name}');
+        });
 
 SRC;
         return parent::render();

@@ -208,7 +208,6 @@ var AetherUpload = {
         form.append("sub_dir", this.subDir);
 
         form.append("locale", this.locale);
-        console.log(form);
 
         $.ajax({
 
@@ -370,5 +369,5 @@ function aetherupload(name, file, group) {
 }
 
 function getPath(){
-    console.log(this.savedPath.substr(this.savedPath.lastIndexOf('/') + 1));
+   //this.savedPath.substr(this.savedPath.lastIndexOf('/') + 1));
 }

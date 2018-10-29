@@ -6,7 +6,7 @@
         @include('admin::form.error')
 
         <div class="controls" id="aetherupload-wrapper-{{$name}}">
-            <input type="file" id="{{$name}}-file" data-filename-placement="inside" class="file-inputs"  onchange="aetherupload('{{$name}}', this, 'file').success(getPath).upload('{{$name}}')"/>
+            <input type="file" id="{{$name}}-file" data-filename-placement="inside" class="file-inputs"/>
             <div class="progress " style="height: 10px;margin-bottom: 2px;margin-top: 10px;width: 200px;">
                 <div id="{{$name}}-progressbar" style="background:blue;height:6px;width:0;"></div>
             </div>
