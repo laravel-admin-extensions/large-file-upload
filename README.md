@@ -6,7 +6,7 @@ laravel-admin extension
 
 1,安装：
 ````
-composer require laravel-admin-ext/large-file-upload
+composer require dianwoung/large-file-upload
 ````
 2,发布AetherUpload-laravel的静态资源：
 ````
