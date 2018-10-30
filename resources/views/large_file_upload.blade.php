@@ -11,7 +11,7 @@
                 <div id="{{$name}}-progressbar" style="background:blue;height:6px;width:0;"></div>
             </div>
             <span style="font-size:12px;color:#aaa;" id="{{$name}}-output"></span>
-            <input type="hidden" name="{{$name}}" id="{{$name}}-savedpath" >
+            <input type="hidden" name="{{$name}}" id="{{$name}}-savedpath" value="{{ old($column, $value) }}">
         </div>
         @include('admin::form.help-block')
     </div>
