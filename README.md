@@ -16,7 +16,7 @@ php artisan aetherupload:publish
 
 4,发布本扩展包的静态资源：
 ````
-php artisan vendor:publish --provider=Encore\LargeFileUpload\LargeFileUploadServiceProvider.php
+php artisan vendor:publish --tag=large-file-upload
 ````
 5,注册进laravel-admin,在app/Admin/bootstrap.php中添加以下代码：
 ````
