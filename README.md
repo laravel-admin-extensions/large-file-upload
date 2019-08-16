@@ -37,14 +37,3 @@ $form->largefile('ColumnName', 'LabelName')->group('groupName');
 3,依赖包AetherUpload-Laravel更新到了2.0版本
 
 后续会加入七牛云直传的支持
-
-效果如图：
-
-基本样式
-
-![](preview.png)
-
-上传中
-![](onload.png)
-
-
