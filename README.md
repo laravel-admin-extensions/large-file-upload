@@ -2,7 +2,7 @@ laravel-admin large-file-upload extension
 ======
 
 本扩展包是基于peinhu的[AetherUpload-Laravel](https://github.com/peinhu/AetherUpload-Laravel)针对[laravel-admin](https://github.com/z-song/laravel-admin)开发的大文件上传工具，
-直接用于Form组件。当前版本2.0为laravel-admin 1.6以上。
+直接用于Form组件。当前版本为laravel-admin 1.6以上。
 
 1,安装：
 ````
@@ -26,7 +26,7 @@ Encore\Admin\Form::extend('largefile', \Encore\LargeFileUpload\LargeFileField::c
 ````
 $form->largefile('ColumnName', 'LabelName');
 ````
-新的2.0版本的更新
+更新的内容
 ---
 1,支持了分组的配置(不填的话，默认file分组)
 ````
