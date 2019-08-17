@@ -34,3 +34,15 @@ $form->largefile('ColumnName', 'LabelName');
 
 上传中
 ![](onload.png)
+----
+新版2.0分支更新的内容
+---
+1,支持了分组的配置(不填的话，默认file分组)
+````
+$form->largefile('ColumnName', 'LabelName')->group('groupName');
+````
+2,编辑状态下文件按钮会显示当前的文件名
+
+3,依赖包AetherUpload-Laravel更新到了2.0版本
+
+后续会加入七牛云直传的支持
