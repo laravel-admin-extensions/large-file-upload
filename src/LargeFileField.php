@@ -6,8 +6,15 @@ use Encore\Admin\Form\Field;
 class LargeFileField extends Field
 {
 
+    protected $group = 'file';
     public $view = 'large-file-field::large_file_upload';
 
+    public function group($group)
+    {
+        $this->group = $group;
+        return $this;
+    }
+    
     public function render()
     {
         $name = $this->formatName($this->column);
@@ -16,7 +23,7 @@ class LargeFileField extends Field
 
         $('#{$name}-file').bootstrapFileInput();
         $('#{$name}-file').change(function(){
-             aetherupload('{$name}', this, 'file').success(getPath).upload('{$name}');
+             aetherupload('{$name}', this, '$this->group').success(getPath).upload('{$name}');
         });
 
 SRC;
