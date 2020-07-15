@@ -17,7 +17,7 @@ class LargeFileField extends Field
     
     public function render()
     {
-        $name = $this->formatName($this->column);
+        $name = str_replace('[', '\\\[', str_replace(']', '\\\]', $this->formatName($this->column)));
 
         $this->script = <<<SRC
 
