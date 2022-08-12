@@ -33,6 +33,7 @@ $form->largefile('ColumnName', 'LabelName');
 ![](preview.png)
 
 上传中
+
 ![](onload.png)
 ----
 新版2.0分支更新的内容
