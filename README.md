@@ -1,6 +1,9 @@
 laravel-admin extension
 ======
 
+由于已经有了更好更专业完善的方案，本项目停止更新，建议大家支持这个项目[Dact-Admin](https://github.com/jqhph/dcat-admin),以获得更好的体验
+===
+
 本扩展包是基于peinhu的[AetherUpload-Laravel](https://github.com/peinhu/AetherUpload-Laravel)针对[laravel-admin](https://github.com/z-song/laravel-admin)开发的大文件上传工具，
 直接用于Form组件。当前版本为Laravel 5.5。
 
@@ -46,4 +49,4 @@ $form->largefile('ColumnName', 'LabelName')->group('groupName');
 
 3,依赖包AetherUpload-Laravel更新到了2.0版本
 
-后续会加入七牛云直传的支持
+
